@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sago Repository</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+
+
+
+
+    <style>
+
+
+        body {
+font-family: "Readex Pro", sans-serif;
+            background: linear-gradient(45deg, #2F1756, #442175);
+            background-size: 400% 400%;
+            animation: gradientBackground 10s ease infinite;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .repo {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px auto;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            display: flex;
+            align-items: center;
+            max-width: 600px;
+            transition: transform 0.3s;
+        }
+
+        .repo:hover {
+            transform: scale(1.05);
+        }
+
+        .repo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .repo-content {
+            flex-grow: 1;
+        }
+
+        .repo a {
+            color: #442175;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .repo a:hover {
+            text-decoration: underline;
+            color: #442175;
+        }
+
+        .repo button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .repo button:active {
+            background-color: #333;
+            transform: scale(0.95);
+        }
+
+
+css
+.repo {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.repo img {
+    margin-right: 20px;
+}
+
+.repo-content {
+    max-width: 400px;
+}
+
+.zebra-button {
+    background-color: #442175; /* أخضر */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.zebra-button:hover {
+    background-color: #442175;
+    transform: scale(1.05);
+}
+
+
+.footer {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #442175;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+css
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.moving-text {
+    font-size: 3em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: moveRightLeft 5s infinite alternate ease-in-out, gradientShift 10s infinite linear;
+}
+
+@keyframes moveRightLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50px); /* يمكنك تعديل المسافة حسب الحاجة */
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+  
+    <h1 class="moving-text">Sago Repo</h1>
+</body>
+</html>
+
+
+
+
+
+<div class="repo">
+    <img src="https://img.icons8.com/?size=100&id=VKQxvoH9eVPG&format=png&color=000000" alt="Zebra Icon">
+    <div class="repo-content">
+        <h2>مصدر زيبرا</h2>
+        <p>اضف الـ زيبرا </p>
+        <p>  Add The Zebra</p>        
+        <button class="zebra-button" onclick="window.location.href='zbra://sources/add/http://sagorepo.catway.org/'">أضف زيبرا</button>
+    </div>
+</div>
+
+
+    <div class="repo">
+        <img src="https://img.icons8.com/?size=100&id=OUQq3hOZ2mcF&format=png&color=000000" alt="Sileo Icon">
+        <div class="repo-content">
+            <h2>مصدر سيلو</h2>
+            <p>اضف الـ سيلو</p>
+        <p>  Add The Sileo</p>                    
+        <button class="zebra-button" onclick="window.location.href='sileo://source/http://sagorepo.catway.org/'">أضف سيلو</button>
+        </div>
+    </div>
+
+    <div class="repo">
+        <img src="assets/images/sago.jpeg" alt="Sileo Icon">
+        <div class="repo-content">
+            <h2>iPA متجري لتطبيقات </h2>
+        <p>  my store for apps</p>                    
+        <button class="zebra-button" onclick="window.location.href='http://ipasago.000.pe/'"> زيارة المتجر</button>
+        </div>
+      </div>
+
+
+
+
+
+<footer class="footer">
+    <p class="footer-title">Copyrights @ <a href="https://SagoRepo.catway.org" class="custom-link">SagoRepo.catway.org</a></p>
+    
+    <div class="social-icons"></div>
+</footer>
+
+<style>
+.custom-link {
+    color: #442175;  /* اختر اللون الذي تريده */
+    text-decoration: none;  /* لإزالة التسطير */
+}
+</style>
+
+
+          
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

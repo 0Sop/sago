@@ -1,0 +1,744 @@
+  <!--بدايه صفحة -->
+</head>
+<body>
+	<div class="header">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1>iPA SAGO</h1>
+<title>iPA SAGO</title>
+</div>
+
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<!--هنا اكواد الينك-->
+
+
+    <link rel="icon" href="assets/images/sago.jpeg" type="image/x-icon"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+ 
+  <!--هنا اكواد ميتا-->
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+
+      
+  <!-- هنا اكواد الجافه سكربت-->
+
+
+    <script>
+window.addEventListener('load', function() {
+ if (!localStorage.getItem('messageShown')) {
+ alert('هذا الموقع محمي وآمن');
+ localStorage.setItem('messageShown', 'true');
+  }
+ });
+        
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-100px";
+    }
+  }
+        
+
+<!--هنا اكواد البحث الهيدر -->
+
+  
+          function filterApps() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const containers = document.querySelectorAll('.container');
+
+            containers.forEach(container => {
+                const appName = container.querySelector('.app-name').textContent.toLowerCase();
+                if (appName.includes(searchInput)) {
+                    container.style.display = 'block';
+                } else {
+                    container.style.display = 'none';
+                }
+            });
+          }
+  
+    </script> 
+
+
+
+    
+   
+    
+  
+  
+  
+  
+<!--هنا اكواد اقسام الهيدر -->
+
+<nav id="navbar">
+    <ul>
+    <li><a href="toolstrollstore.html">ادوات ترولستور</a></li> 
+    </ul>
+    <a href="games.html">العاب مهكره<a>
+          </ul>
+    <a href="Live.html">بث مباريات</a>
+        </ul>
+    <a href="index.html">الرائيسية</a>
+        </ul>
+
+  </nav>
+
+  
+  
+
+  
+  
+  
+    <style>
+    
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #442175;
+            border: 2px solid #442175;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px; /* إضافة margin-top لتحديد المسافة من الأعلى */
+        }
+        .input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #442175;
+            border-radius: 5px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <input type="search" id="searchInput" placeholder="ابحث عن تطبيقات" onkeyup="filterApps()" class="input">
+    </div>
+
+    
+    
+    
+    
+  
+<!--هنا اكواد الاستايل -->
+  
+	<style>   
+  
+  
+  
+  
+  
+  
+		.header {
+			text-align: center;
+			background-color: #f8f8f8;
+			padding: 10px 0;
+		}
+		h1 {
+			color: #333;
+			font-size: 24px;
+		}  
+  
+  
+      
+.center {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 3vh;
+}
+  
+  
+  
+  css
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navbar ul li {
+    margin: 0 10px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333;
+}
+
+#navbar a:hover {
+    color: #666;
+}
+
+  
+
+  
+  		body {
+			margin: 0;
+			padding: 0;
+     font-family: "Readex Pro", sans-serif;
+		}
+		header {
+			background-color: #333;
+			padding: 10px;
+			color: #fff;
+			text-align: center;
+			font-size: 20px;
+		}
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #fff;
+			padding: 10px;
+			box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+		}
+		nav ul {
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		nav ul li {
+			margin-right: 20px;
+		}
+		nav ul li:last-child {
+			margin-right: 0;
+		}
+		nav a {
+			color: #333;
+			font-size: 16px;
+			text-decoration: none;
+		}
+		nav a:hover {
+			color: #777;
+		}
+  
+  
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+     font-family: "Readex Pro", sans-serif;
+			background: linear-gradient(to bottom, #442175, #2F1756);
+		}
+
+		.container{
+			width: 80%;
+			margin: 50px auto;
+			background-color: white;
+			padding: 20px;
+			border-radius: 10px;
+		}
+
+		.app-img{
+			width: 200px;
+			height: 200px;
+			margin: 0 auto;
+			display: block;
+			border-radius: 10px;
+		}
+
+		.app-name{
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.app-description{
+			font-size: 18px;
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		.download-btn{
+			display: block;
+			margin: 30px auto;
+			padding: 10px 20px;
+			background-color: #442175;
+			color: white;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+
+    
+    .header {
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 24px;
+        color: #333;
+        animation: moveInPlace 2s infinite alternate;
+    }
+
+    @keyframes moveInPlace {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(10px);
+        }
+    }
+    
+    
+		@media only screen and (max-width: 480px){
+			.container{
+				width: 95%;
+			}
+
+			.app-img{
+				width: 100px;
+				height: 100px;
+			}
+
+			.app-name{
+				font-size: 20px;
+			}
+
+			.app-description{
+				font-size: 14px;
+			}
+
+			.download-btn{
+				margin: 15px auto;
+				font-size: 16px;
+			}
+		}
+    
+    
+    
+        .social-links {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+          }    
+    
+          
+          
+          
+                  .social-links {
+            position: fixed;
+            bottom: 45px;
+            right: 20px;
+            z-index: 111;
+        }
+
+        .social-links a {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 16px;
+            color: #333;
+            font-family: 'Readex Pro', sans-serif;
+            margin: 0;
+          }
+          
+          
+                  .counter {
+            position: fixed;
+            bottom: 45px;
+            left: 20px;
+            z-index: 999;
+          }
+          
+          
+          
+          @media (max-width:1023px){
+            header{
+              padding: 12px 20px;
+            }
+            
+            .navigation a{
+              padding-left: 10px;
+            }
+            
+            .title{
+              font-size: 1.8em;
+            }
+            section{
+              padding: 80px 20px;
+            }
+            
+            .main-content h2{
+              font-size: 1em;
+            }
+            .main-content h3{
+              font-size: 1.6em;
+            }  
+            .content{
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+          
+          
+                   .hidden-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
+  }
+  
+          
+   
+
+
+
+#colored-text {
+  color: #442175; /* يمكنك تعديل اللون إلى أي لون تريده */
+}
+
+	</style>
+  
+
+  <style>
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.app-img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.app-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.app-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 100px;
+    background-color: #442175;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.download-btn:hover {
+    background-color: #442175;
+}
+
+.notification {
+    background-color: #e7f3fe;
+    border-left: 6px solid #442175;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.notification-message {
+    color: #31708f;
+    font-size: 14px;
+    margin: 0;
+}
+</style>
+
+
+
+  
+  
+   <!--كود نشر تطبيقاتك من هنا -->
+
+
+  
+   
+   
+  
+  
+   
+   
+   
+   <div>
+<div class="container">
+  <img src="https://play-lh.googleusercontent.com/ZEaM7dEWtjAmEJxrHDXY9efPylTZarQCPrPpX01YlBOnzAyA1VxCMhXktqV5uBKvEg" alt="App Icon" class="app-img">
+  <h1 class="app-name">HaloVPN </h1>
+  <p class="app-description">تطبيق في بي ان لترولستور والشهادات</p>
+  <a href="" class="download-btn">تحميل</a>
+</div>
+<div>
+<div class="container">
+  <img src="https://downloadr2.apkmirror.com/wp-content/uploads/2023/06/07/6499e8567f54e_com.handy.opus.iptv.xtream.player.png" alt="App Icon" class="app-img">
+  <h1 class="app-name">Opus iPTV </h1>
+  <p class="app-description">تطبيق لعرض محتوى اشتراكات iPTV  </p>
+  <a href="" class="download-btn">تحميل</a>
+</div>
+
+   
+
+
+
+
+
+
+
+
+    	<div class="container">
+		<img src="assets/images/PerfectVideoLite.jpeg" alt="App Icon" class="app-img">
+		<h1 class="app-name">Perfect VideoLite</h1>
+		<p class="app-description">المميزات : مفتوح المميزات بلكامل
+    </p>
+		<a href="https://ipasop.catway.org/ipa/PerfectVideoLite.ipa" class="download-btn">تحميل</a>
+	</div>
+
+
+
+
+
+    	<div class="container">
+		<img src="assets/images/HUDWidgets.jpeg" alt="App Icon" class="app-img">
+		<h1 class="app-name">HUD Widgets</h1>
+		<p class="app-description">المميزات : مفتوح المميزات بالكامل 
+    </p>
+		<a href="https://ipasop.catway.org/ipa/HUDWidgets.ipa" class="download-btn">تحميل</a>
+	</div>
+  
+
+
+  
+  
+      	<div class="container">
+		<img src="assets/images/joker.jpeg" alt="App Icon" class="app-img">
+		<h1 class="app-name">الجوكر 1</h1>
+		<p class="app-description">المميزات : بدون اعلانات
+    </p>
+		<a href="https://ipasop.catway.org/ipa/joker.ipa" class="download-btn">تحميل</a>
+	</div>
+  
+  
+  
+  
+  
+
+    	<div class="container">
+		<img src="assets/images/g.jpeg" alt="App Icon" class="app-img">
+		<h1 class="app-name">Guru Maps Pro & GPS Tracker</h1>
+		<p class="app-description">المميزات : مدفوع على ابل ستور
+    </p>
+		<a href="https://ipasop.catway.org/ipa/Guru.ipa" class="download-btn">تحميل</a>
+	</div>
+
+
+
+
+
+    	<div class="container">
+		<img src="assets/images/Python.jpeg" alt="App Icon" class="app-img">
+		<h1 class="app-name">Python 3</h1>
+		<p class="app-description">المميزات : مدفوع على ابل ستور
+    </p>
+		<a href="https://ipasop.catway.org/ipa/Python.ipa" class="download-btn">تحميل</a>
+	</div>
+
+
+
+
+
+  
+
+
+    	<div class="container">
+		<img src="assets/images/Dopamine.jpeg" alt="App Icon" class="app-img">
+		<h1 class="app-name">Dopamine</h1>
+		<p class="app-description">تطبيق خاص لعمل الجلبريك الاصدارات المدعومه و الاجهزه هي : - من 15.0 إلى 16.5: كل الأجهزة مدعومة - إصدار 16.5.1: كل الأجهزة ما عدا A15 و A16 و M2 - إصدار 16.6 و 16.6.1: أجهزة A11 وأقل فقط
+    </p>
+		<a href="https://ipasop.catway.org/ipa/Dopamine.tipa" class="download-btn">تحميل</a>
+	</div>
+  
+  
+  
+
+
+  	<div class="container">
+		<img src="assets/images/vodu.jpeg" alt="App Icon" class="app-img">
+		<h1 class="app-name">Vodu</h1>
+		<p class="app-description"> تطبيق مشاهدات الافلام والمسلسلات والبث المباشر 
+ يعمل فقط مع الشبكات المدعومة داخل العراق </p>
+		<a href="https://ipasop.catway.org/ipa/vodu.ipa" class="download-btn">تحميل</a>
+	</div>
+  
+  
+  
+  	<div class="container">
+		<img src="https://ipa.cypwn.xyz/serve/icons/IGRocketRegram_329.0.6.png" alt="App Icon" class="app-img">
+		<h1 class="app-name">IGRocketRegram</h1>
+		<p class="app-description">تطبيق انستغرام مدموج مع اداه Rocket
+    </p>
+		<a href="https://ipa.cypwn.xyz/serve/get.php?md5=92c9b41ecf4832eb3f7f449b0d9d5cc9" class="download-btn">تحميل</a>
+	</div>
+  
+  
+  
+  
+  
+  
+  	<div class="container">
+		<img src="https://iosninja.io/img/ipas/youtube.jpg" alt="App Icon" class="app-img">
+		<h1 class="app-name">uYouEnhanced</h1>
+		<p class="app-description">نسخة معدلة من uYou</p>
+		<a href="https://ipa.cypwn.xyz/serve/get.php?md5=3cfa9eeed42ed13d7fd2e40d41c68b19" class="download-btn">تحميل</a>
+	</div>
+  
+
+  
+    	<div class="container">
+		<img src="https://ipa.cypwn.xyz/serve/icons/Nicegram_1.6.2.png" alt="App Icon" class="app-img">
+		<h1 class="app-name">Nicegram</h1>
+		<p class="app-description">المميزات : مفتوح Premium</p>
+		<a href="https://ipa.cypwn.xyz/serve/get.php?md5=3d50d9f599f5ff555c1b5916bfbd906c" class="download-btn">تحميل</a>
+	</div>
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+ 
+ 
+ 
+  
+
+  
+  
+  
+
+    <!-- فوتر الموقع-->
+    
+  
+      <!-- روابط تواصل الاجتماعي-->
+      
+    <div class="social-links">
+        <a href="https://x.com/ipasagoo" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://t.me/ipasago" target="_blank"><i class="fab fa-telegram"></i></a>
+
+        
+        <a href="https://t.me/ipaTroll1store" target="_blank"><i class="fa-brands fa-telegram fa-rotate-180" style="color: #74C0FC"></i></a>        
+    </div>
+
+    <!-- فوتر الموقع-->
+<div class="footer">
+  <p>© 2024 All rights <span class="hidden-link" id="colored-text">@iPASAGO</span></p>
+</div>
+
+
+    
+    
+
+      <!-- عرض عدد زوار الموقع -->
+    <div class="counter">
+        <center>
+            <script type="text/javascript" src="//widget.supercounters.com/ssl/hit.js"></script>
+            <script type="text/javascript">sc_hit(1690262,0,9);</script>
+            <br>
+            <noscript><a href="http://www.supercounters.com/">free online counter</a></noscript>
+        </center>
+      </div>
+      
+      
+
+
+      
+
+
+      
+    
+    
+</body>
+</html>
